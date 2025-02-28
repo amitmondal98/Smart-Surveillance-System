@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    to right,
+    #4a90e2,
+    #9013fe
+  ); /* Blue-Purple Gradient */
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+}
+
+/* Dashboard Layout */
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+/* Video Container */
+.video-container {
+  flex: 1;
+  max-width: 650px;
+  background: rgba(255, 255, 255, 0.2); /* Transparent White */
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+video {
+  width: 100%;
+  border-radius: 8px;
+  border: 3px solid #00d4ff;
+  transform: rotateY(180deg);
+}
+
+/* Status Panel */
+.status-panel {
+  flex: 1;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.2); /* Transparent White */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.status-panel h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #d20d0d;
+}
+
+.status-panel p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container,
+  .status-panel {
+    width: 100%;
+    max-width: 90%;
+  }
+}
