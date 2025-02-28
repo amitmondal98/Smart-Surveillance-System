@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Surveillance System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Smart Surveillance System</h1>
+
+    <div class="dashboard">
+      <!-- Video Feed -->
+      <div class="video-container">
+        <video id="video" autoplay></video>
+      </div>
+
+      <!-- Status Information -->
+      <div class="status-panel">
+        <h2>Detection Status</h2>
+        <p>Human Detection: <span id="human-detect">0</span></p>
+        <p>Face Recognition: <span id="face-recog">0</span></p>
+        <p>Intruders: <span id="imposter-detect">0</span></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
