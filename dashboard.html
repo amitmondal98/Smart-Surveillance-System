@@ -1,29 +1,23 @@
+<!-- HTML File: index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smart Surveillance System</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles2.css" />
   </head>
   <body>
-    <h1>Smart Surveillance System</h1>
-
     <div class="dashboard">
-      <!-- Video Feed -->
-      <div class="video-container">
-        <video id="video" autoplay></video>
+      <div class="left-section">
+        <div class="login-box">
+          <h2>Face Recognition Login</h2>
+          <button>Login with Face</button>
+        </div>
       </div>
-
-      <!-- Status Information -->
-      <div class="status-panel">
-        <h2>Detection Status</h2>
-        <p>Human Detection: <span id="human-detect">0</span></p>
-        <p>Face Recognition: <span id="face-recog">0</span></p>
-        <p>Intruders: <span id="imposter-detect">0</span></p>
+      <div class="right-section">
+        <a href="backend_code.py" class="btn-backend">Go to Backend Code</a>
       </div>
     </div>
-
-    <script src="script.js"></script>
   </body>
 </html>
